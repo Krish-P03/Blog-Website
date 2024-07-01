@@ -7,11 +7,13 @@ import Home from './pages/Home'
 import About from './pages/About'
 import DashBoard from './pages/DashBoard'
 import Projects from './pages/Projects'
+import Header from './Componenets/Header'
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
